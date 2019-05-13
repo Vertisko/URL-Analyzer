@@ -18,10 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::prefix('analyzer')->group(function () {
-    Route::get('', 'AnalyzerController@analyze')->name('analyzer.get'); // DONE
-    Route::get('http', 'AnalyzerController@http2test')->name('analyzer.http'); // DONE
-    Route::get('alts', 'AnalyzerController@missingAlts')->name('analyzer.alts'); // DONE
-
+    Route::post('', 'AnalyzerController@analyzeJson')->name('analyzer.post'); // DONE
 });
 
 Route::prefix('curl')->group(function () {
@@ -39,6 +36,10 @@ Route::prefix('http')->group(function () {
 
 Route::prefix('gzip')->group(function () {
     Route::get('', 'GzipEncodingController@gzipTest')->name('gzip.gzipTest'); // DONE
+});
+
+Route::prefix('webp')->group(function () {
+    Route::get('', 'ImageWebPController@webPTest')->name('webP.webPTest'); // DONE
 });
 
 Route::prefix('insight')->group(function () {

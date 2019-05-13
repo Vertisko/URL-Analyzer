@@ -30,6 +30,10 @@ class AnalyzerService
      * @var IndexService
      */
     private $indexService;
+    /**
+     * @var ImageWebPService
+     */
+    private $imageWebPService;
 
     /**
      * AnalyzerService constructor.
@@ -38,16 +42,18 @@ class AnalyzerService
      * @param GzipEncodingService $gzipEncodingService
      * @param PageSpeedInsightService $pageSpeedInsightService
      * @param IndexService $indexService
+     * @param ImageWebPService $imageWebPService
      */
     public function __construct(
         HttpService $httpService, ImageAltService $imageAltService, GzipEncodingService $gzipEncodingService,
-        PageSpeedInsightService $pageSpeedInsightService, IndexService $indexService)
+        PageSpeedInsightService $pageSpeedInsightService, IndexService $indexService, ImageWebPService $imageWebPService)
     {
         $this->httpService = $httpService;
         $this->imageAltService = $imageAltService;
         $this->gzipEncodingService = $gzipEncodingService;
         $this->pageSpeedInsightService = $pageSpeedInsightService;
         $this->indexService = $indexService;
+        $this->imageWebPService = $imageWebPService;
     }
 
     public function analyze(Request $request): array
@@ -65,9 +71,8 @@ class AnalyzerService
         $result["httpTest"] = $this->httpService->httpTest($header["response"]);
         //3. gzip test
         $result["gzipTest"] = $this->gzipEncodingService->gzipTest($header["response"]);
-        //4. image/webp test
-        //TODO
-
+        //4. image/webP test
+        $result["webPTest"] = $this->imageWebPService->webPTest($body["response"]);
         //5. index test
         $result["indexTest"] = $this->indexService->indexTest($header["response"], $url);
         //6. image alts test

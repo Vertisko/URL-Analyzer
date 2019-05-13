@@ -2,7 +2,296 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0942197f-cd2b-458d-9ee7-edc34d18d920" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Web/AnalyzerRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/ResponseFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Validation/ValidateService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Web/ImageWebPService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/dist/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/bs-commonjs-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/bs-glyphicons-data-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/bs-lessdoc-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/bs-raw-files-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/change-version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/configBridge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/npm-shrinkwrap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/grunt/sauce_browsers.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/affix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/js/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/.csscomb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/.csslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/alerts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/badges.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/bootstrap.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/breadcrumbs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/button-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/carousel.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/close.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/code.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/component-animations.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/dropdowns.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/glyphicons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/input-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/jumbotron.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/labels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/list-group.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/media.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/alerts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/background-variant.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/border-radius.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/center-block.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/clearfix.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/gradients.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/grid-framework.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/hide-text.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/image.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/labels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/list-group.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/nav-divider.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/nav-vertical-align.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/opacity.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/panels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/progress-bar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/reset-filter.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/reset-text.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/resize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/responsive-visibility.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/size.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/tab-focus.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/table-row.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/text-emphasis.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/text-overflow.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/mixins/vendor-prefixes.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/modals.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/navbar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/navs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/normalize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/pager.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/panels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/popovers.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/print.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/progress-bars.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/responsive-embed.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/responsive-utilities.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/scaffolding.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/tables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/thumbnails.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/tooltip.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/type.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/utilities.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/less/wells.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/nuget/MyGet.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/nuget/bootstrap.less.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/nuget/bootstrap.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/dist/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes/prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/attributes/val.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/access.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/camelCase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/nodeName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/ready-no-deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/readyException.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/stripAndCollapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/toType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/curCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/showHide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/rboxStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/css/var/swap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/data/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/deprecated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/effects/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event/focusin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/event/trigger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/exports/amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/exports/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/queue/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/selector-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/traversing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/arr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/class2type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/documentElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/fnToString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/getProto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/indexOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/isFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/isWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/pnum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/var/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jquery/src/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/analyzer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/checkOrCloseIcon.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/tableItemSupport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simplo-site-analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simplo-site-analyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Web/AnalyzerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Web/AnalyzerService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/ClientUrlTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/ClientUrlTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,42 +306,51 @@
     <session id="-99803599">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="AnalyzerRequest" value="1" />
+          <entry key="css" value="3" />
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="4" />
           <entry key="json" value="3" />
-          <entry key="php" value="69" />
+          <entry key="php" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
+          <entry key="Blade" value="7" />
+          <entry key="CSS" value="3" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="69" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PHP" value="115" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="17" />
+          <entry key="css" value="352" />
+          <entry key="dummy" value="39" />
           <entry key="json" value="3" />
-          <entry key="php" value="10824" />
+          <entry key="php" value="15392" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Blade" value="1856" />
+          <entry key="CSS" value="352" />
+          <entry key="HTML" value="7" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="10824" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="PHP" value="13529" />
+          <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -65,89 +363,103 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/StatusCodeTest.php">
+        <entry file="file://$PROJECT_DIR$/app/Services/Web/AnalyzerService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-238">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+              <folding>
+                <element signature="e#38#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/HttpTest.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImageWebPController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="283">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="e#40#78#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/GzipEncodingTest.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/analyzer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="2536">
+              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/BaseRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="e#37#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Web/AnalyzerRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/Services/Validation/ValidateService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/Web/IndexService.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+            <state relative-caret-position="268">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
-                <element signature="e#37#67#0#PHP" expanded="true" />
+                <element signature="e#40#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/Web/GzipEncodingService.php">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="192">
+              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#37#67#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/Web/HttpService.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/ResponseFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="264">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -163,6 +475,14 @@
       <find>SSL</find>
       <find>SSL_</find>
       <find>strpos</find>
+      <find>web</find>
+      <find>meta</find>
+      <find>-</find>
+      <find>exit;</find>
+      <find>robot</find>
+      <find>??</find>
+      <find>?</find>
+      <find>webp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,13 +494,11 @@
         <option value="$PROJECT_DIR$/app/Services/Web/Http2TestService.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/HttpTestService.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/ImageService.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Http2Test.php" />
         <option value="$PROJECT_DIR$/tests/Feature/MissingAltsTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/StatusCodeTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/HttpTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/GzipEncodingTest.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/ClientLibraryTrait.php" />
         <option value="$PROJECT_DIR$/app/Traits/ClientLibraryTrait.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/ClientUrlService.php" />
@@ -191,16 +509,37 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/config/page-speed-insight.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageSpeedInsightController.php" />
-        <option value="$PROJECT_DIR$/app/Traits/ClientUrlTrait.php" />
         <option value="$PROJECT_DIR$/app/Services/DTO/AuditDTO.php" />
         <option value="$PROJECT_DIR$/app/Services/DTO/BaseDTO.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/HttpService.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/ImageAltService.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/GzipEncodingService.php" />
-        <option value="$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Services/Web/IndexService.php" />
+        <option value="$PROJECT_DIR$/app/Services/Web/ImageWebpService.php" />
+        <option value="$PROJECT_DIR$/app/Services/Web/ImageWebPService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ImageWebPController.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/WebPTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/error.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/tableItem.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/checkOrCloseIcon.blade.php" />
+        <option value="$PROJECT_DIR$/app/Traits/ClientUrlTrait.php" />
+        <option value="$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Services/Validation/ValidationService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/BaseRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Web/AnalyzerRequest.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/content.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/app.css" />
+        <option value="$PROJECT_DIR$/resources/views/analyzer.blade.php" />
+        <option value="$PROJECT_DIR$/config/stats.php" />
         <option value="$PROJECT_DIR$/app/Services/Web/AnalyzerService.php" />
+        <option value="$PROJECT_DIR$/app/Http/JsonFactory.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Services/Validation/ValidateService.php" />
       </list>
     </option>
   </component>
@@ -215,6 +554,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/public/plugins/bootstrap/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -304,13 +644,17 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/vipnytt/robotstagparser" />
+      <path value="$PROJECT_DIR$/vendor/theseer/fdomdocument" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/finder-facade" />
+      <path value="$PROJECT_DIR$/vendor/wnx/laravel-stats" />
+      <path value="$PROJECT_DIR$/vendor/phploc/phploc" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-320" />
-    <option name="y" value="-1177" />
-    <option name="width" value="1920" />
-    <option name="height" value="1177" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="320" />
+    <option name="y" value="23" />
+    <option name="width" value="960" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -356,38 +700,32 @@
               <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
               <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
               <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
               <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simplo-site-analyzer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simplo-site-analyzer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,7 +734,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="d&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="content&#9;FILE&#9;file:///Users/davidkakis/Documents/simplo-site-analyzer/resources/lang/en/content.php&#10;cont&#9;FILE&#9;file:///Users/davidkakis/Documents/simplo-site-analyzer/resources/lang/en/content.php&#10;cone&#9;null&#9;null&#10;content.ph&#9;FILE&#9;file:///Users/davidkakis/Documents/simplo-site-analyzer/resources/lang/en/content.php&#10;d&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -405,7 +743,13 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/plugins" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/plugins" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/app/Traits" />
     </key>
   </component>
@@ -432,18 +776,19 @@
       <option name="presentableId" value="Default" />
       <updated>1557250126949</updated>
       <workItem from="1557250128426" duration="42192000" />
-      <workItem from="1557420236091" duration="61000" />
+      <workItem from="1557420236091" duration="1594000" />
+      <workItem from="1557675080014" duration="17921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42253000" />
+    <option name="totallyTimeSpent" value="61707000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-320" y="-1177" width="1920" height="1177" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="714" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16613418" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25605816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -458,7 +803,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35266605" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.09405941" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -496,119 +841,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php" />
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
-    <entry file="file://$PROJECT_DIR$/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="282" column="22" selection-start-line="282" selection-start-column="18" selection-end-line="282" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret column="4953" selection-start-column="4953" selection-end-column="4953" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="44" column="62" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/ClientUrlService.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientUrlController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GzipEncodingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImageAltController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HttpController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-754" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/queue.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/view.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-576" />
@@ -630,13 +862,6 @@
         <state relative-caret-position="-796" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Traits/ClientUrlTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -651,82 +876,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/DTO/AuditDTO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/ImageAltService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/AnalyzerService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <element signature="e#38#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/MissingAltsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/StatusCodeTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/HttpTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/Web/IndexService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
+        <state relative-caret-position="1776">
           <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
           <folding>
             <element signature="e#37#67#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/GzipEncodingService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#37#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Web/HttpService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -737,18 +896,291 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/GzipEncodingTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="481">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-553">
+          <caret line="2302" column="9" selection-start-line="2302" selection-start-column="9" selection-end-line="2302" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/HttpService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/GzipEncodingService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/ImageAltService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1416">
+          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImageAltController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HttpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GzipEncodingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/MissingAltsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/HttpTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/StatusCodeTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/ImageWebPService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/WebPTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="2" lean-forward="true" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/auth.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/DependencyInjection/ConfigurableExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/DTO/AuditDTO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/checkOrCloseIcon.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/datatables.net-bs/js/dataTables.bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Traits/ClientUrlTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/PageSpeedInsightService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/jquery/src/css/var/swap.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/bootstrap/js/tab.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/tableItemSupport.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/error.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/stats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-633">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/analyzer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2536">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Web/AnalyzerService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <element signature="e#38#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImageWebPController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/ResponseFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnalyzerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/BaseRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#37#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Web/AnalyzerRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Validation/ValidateService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

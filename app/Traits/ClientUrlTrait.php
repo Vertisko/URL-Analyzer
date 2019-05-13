@@ -47,7 +47,7 @@ trait ClientUrlTrait
     function composeBodyOptionsArray(string $url): array
     {
         return [
-            CURLOPT_URL => $url,
+            CURLOPT_URL => $this->enforceHttpsProtocol($url),
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => true,
         ];

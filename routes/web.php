@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('', 'AnalyzerController@intro')->name('analyzer.get'); // DONE
+Route::post('', 'AnalyzerController@analyze')->name('analyzer.post'); // DONE
+
