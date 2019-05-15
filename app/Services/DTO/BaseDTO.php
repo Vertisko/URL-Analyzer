@@ -3,7 +3,6 @@
 
 namespace App\Services\DTO;
 
-
 abstract class BaseDTO
 {
 
@@ -15,7 +14,6 @@ abstract class BaseDTO
     public function __construct(array $values = [])
     {
         foreach ($values as $name => $value) {
-
             if (method_exists($this, $method = "set" . ucfirst($name))) {
                 $this->$method($value);
             }

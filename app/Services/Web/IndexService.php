@@ -2,7 +2,6 @@
 
 namespace App\Services\Web;
 
-
 use App\Traits\ClientUrlTrait;
 use RobotsTxtParser;
 use vipnytt\XRobotsTagParser;
@@ -40,9 +39,9 @@ class IndexService
     }
 
     /**
-     * @return mixed
+     * @return array
      */
-    public function getResponseArray()
+    public function getResponseArray(): array
     {
         return $this->responseArray;
     }
@@ -66,18 +65,10 @@ class IndexService
         $this->lookupXRobotTag($header);
 
         return $this->getResponseArray();
-
     }
 
     private function lookupXRobotTag(string $header)
     {
-        //DUMMY HEADER
-//        $header = <<<STRING
-//        HTTP/1.1 200 OK
-//        Date: Tue, 25 May 2010 21:42:43 GMT
-//        X-Robots-Tag: nofollow, noindex
-//STRING;
-
         $result = $this->initPartArray();
         $rules = $this->retrieveXRobotRules($header);
         //         rules for agent * found
@@ -88,7 +79,6 @@ class IndexService
             }
         }
         $this->responseArray["xRobotTag"] = $result;
-
     }
 
     private function retrieveXRobotRules(string $header): array
@@ -106,7 +96,6 @@ class IndexService
             $result = $this->robotTsFileIndexTest($result, $robotsFileBody["response"], '*');
         }
         $this->responseArray["robotsFile"] = $result;
-
     }
 
     private function robotTsFileIndexTest(array $result, string $robotsFileBody, string $agent): array
@@ -116,19 +105,16 @@ class IndexService
         $parser->setUserAgent($agent);
         $result["isIndexed"] = $parser->isAllowed('/') ? true : false;
         return $result;
-
     }
 
     private function lookupMetaTag(string $url): void
     {
         $result = $this->initPartArray();
         $tags = get_meta_tags($this->enforceHttpsProtocol($url));
-
 //        meta tag found
         if (isset($tags["robots"])) {
             $result["exists"] = true;
             $result["isIndexed"] = (stripos($tags["robots"], "noindex")) ? false : true;
-
         }
         $this->responseArray["metaTag"] = $result;
     }

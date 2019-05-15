@@ -9,7 +9,11 @@ class ClientUrlController extends Controller
 {
     use ClientUrlTrait;
 
-    public function body(Request $request)
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function body(Request $request): array
     {
         $url = $request->input('url');
         return $this->retrieveCurlResponse(
@@ -17,7 +21,11 @@ class ClientUrlController extends Controller
         );
     }
 
-    public function header(Request $request)
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function header(Request $request): array
     {
         $url = $request->input('url');
         return $this->retrieveCurlResponse(

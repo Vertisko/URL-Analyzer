@@ -3,61 +3,60 @@
 
 namespace App\Services\DTO;
 
-
 class AuditDTO extends BaseDTO
 {
-
     private $description;
     private $score;
     private $title;
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getScore()
+    public function getScore(): int
     {
         return $this->score;
     }
 
     /**
-     * @param mixed $score
+     * @return string
      */
-    public function setScore($score): void
-    {
-        $this->score = $score;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDescription()
+    public function getDescription(): string
     {
         return $this->description;
     }
 
     /**
-     * @param mixed $description
+     * @param int $score
+     * @return AuditDTO
      */
-    public function setDescription($description): void
+    public function setScore(int $score): AuditDTO
+    {
+        $this->score = $score;
+    }
+
+    /**
+     * @param mixed $description
+     * @return AuditDTO
+     */
+    public function setDescription($description): AuditDTO
     {
         $this->description = $description;
     }
 
     /**
-     * @param mixed $title
+     * @param string $title
+     * @return AuditDTO
      */
-    public function setTitle($title): void
+    public function setTitle(string $title): AuditDTO
     {
         $this->title = $title;
     }
-
-
 }

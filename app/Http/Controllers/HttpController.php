@@ -34,6 +34,5 @@ class HttpController extends Controller
             $this->composeHeaderOptionsArray($url)
         );
         return $this->httpService->httpTest($header["response"]);
-
     }
 }

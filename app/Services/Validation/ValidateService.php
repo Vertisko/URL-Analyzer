@@ -18,6 +18,4 @@ class ValidateService
     {
         return ['url' => 'url'];
     }
-
-
 }

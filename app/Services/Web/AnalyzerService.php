@@ -3,7 +3,6 @@
 
 namespace App\Services\Web;
 
-
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
@@ -45,9 +44,13 @@ class AnalyzerService
      * @param ImageWebPService $imageWebPService
      */
     public function __construct(
-        HttpService $httpService, ImageAltService $imageAltService, GzipEncodingService $gzipEncodingService,
-        PageSpeedInsightService $pageSpeedInsightService, IndexService $indexService, ImageWebPService $imageWebPService)
-    {
+        HttpService $httpService,
+        ImageAltService $imageAltService,
+        GzipEncodingService $gzipEncodingService,
+        PageSpeedInsightService $pageSpeedInsightService,
+        IndexService $indexService,
+        ImageWebPService $imageWebPService
+    ) {
         $this->httpService = $httpService;
         $this->imageAltService = $imageAltService;
         $this->gzipEncodingService = $gzipEncodingService;
@@ -60,8 +63,8 @@ class AnalyzerService
     {
         $url = $request->input('url');
         $body = $this->retrieveCurlResponse($this->composeBodyOptionsArray($url));
-        $header = $this->retrieveCurlResponse($this->composeHeaderOptionsArray($url));;
-        $result = array();
+        $header = $this->retrieveCurlResponse($this->composeHeaderOptionsArray($url));
+        $result = [];
         if ($body["statusCode"] <> 200) {
             return [];
         }
@@ -82,6 +85,4 @@ class AnalyzerService
 
         return $result;
     }
-
-
 }

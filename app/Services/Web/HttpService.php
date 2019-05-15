@@ -4,7 +4,6 @@ namespace App\Services\Web;
 
 class HttpService
 {
-
     private $responseArray;
 
     /**
@@ -15,7 +14,11 @@ class HttpService
         $this->initResponseArray();
     }
 
-    private function initResponseArray(bool $support = false, string $error = "")
+    /**
+     * @param bool $support
+     * @param string $error
+     */
+    private function initResponseArray(bool $support = false, string $error = ""): void
     {
         $this->responseArray = [
             "isSupported" => $support,
@@ -24,9 +27,9 @@ class HttpService
     }
 
     /**
-     * @return mixed
+     * @return array
      */
-    public function getResponseArray()
+    public function getResponseArray(): array
     {
         return $this->responseArray;
     }
@@ -58,8 +61,7 @@ class HttpService
     /**
      * @return bool
      */
-    public
-    function evaluateClientSideTest(): bool
+    public function evaluateClientSideTest(): bool
     {
         return (curl_version()["features"] & CURL_VERSION_HTTP2 !== 0) ? true : false;
     }
@@ -68,8 +70,7 @@ class HttpService
      * @param string $header
      * @return array
      */
-    private
-    function evaluateServerSideTest(string $header): array
+    private function evaluateServerSideTest(string $header): array
     {
         $header !== false ?
             ($this->responseArray["isSupported"] = (strpos($header, "HTTP/2") === 0) ? true : false)
@@ -78,6 +79,4 @@ class HttpService
 
         return $this->responseArray;
     }
-
-
 }

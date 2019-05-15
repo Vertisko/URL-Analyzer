@@ -2,7 +2,6 @@
 
 namespace App\Services\Web;
 
-
 use App\Services\DTO\AuditDTO;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Support\Facades\Config;
@@ -17,7 +16,6 @@ class PageSpeedInsightService
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -29,29 +27,30 @@ class PageSpeedInsightService
         $url = Config::get('page-speed-insight.api_url') . $testedUrl;
 
         $body = $this->retrieveCurlResponse(
-            $this->composeBodyOptionsArray($url));
+            $this->composeBodyOptionsArray($url)
+        );
         return $this->parseAnalysis(json_decode($body["response"]));
-
     }
 
-    private function parseAnalysis(\stdClass $json)
+    /**
+     * @param \stdClass $json
+     * @return array
+     */
+    private function parseAnalysis(\stdClass $json): array
     {
-        $result = array();
+        $result = [];
 //        $result["loadingExperience"] = $json->loadingExperience->overall_category ?? -1;
 //        $result["originLoadingExperience"] = $json->originLoadingExperience->overall_category ?? -1;
-        $result["audits"] = array();
+        $result["audits"] = [];
         if (isset($json->lighthouseResult)) {
             foreach ($json->lighthouseResult->audits as $audit) {
                 if (isset($audit->score)) {
                     $audit = new AuditDTO((array)$audit);
                     array_push($result["audits"], $audit);
                 }
-
             }
         }
 
         return $result;
-
     }
-
 }

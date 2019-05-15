@@ -10,10 +10,8 @@ trait ClientUrlTrait
      * @return array
      */
 
-    public
-    function retrieveCurlResponse(array $options): array
+    public function retrieveCurlResponse(array $options): array
     {
-
         $curlHandler = curl_init();
         curl_setopt_array($curlHandler, $options);
         $response = curl_exec($curlHandler);
@@ -28,8 +26,7 @@ trait ClientUrlTrait
      * @param string $url
      * @return array
      */
-    public
-    function composeHeaderOptionsArray(string $url): array
+    public function composeHeaderOptionsArray(string $url): array
     {
         return [
             CURLOPT_URL => $this->enforceHttpsProtocol($url),
@@ -43,8 +40,11 @@ trait ClientUrlTrait
         ];
     }
 
-    public
-    function composeBodyOptionsArray(string $url): array
+    /**
+     * @param string $url
+     * @return array
+     */
+    public function composeBodyOptionsArray(string $url): array
     {
         return [
             CURLOPT_URL => $this->enforceHttpsProtocol($url),
@@ -54,7 +54,11 @@ trait ClientUrlTrait
     }
 
 
-    private function enforceHttpsProtocol(string $url)
+    /**
+     * @param string $url
+     * @return string
+     */
+    private function enforceHttpsProtocol(string $url):string
     {
         $url = preg_replace("/^http:/i", "https:", $url);
         if (false === strpos($url, '://')) {
@@ -62,5 +66,4 @@ trait ClientUrlTrait
         }
         return $url;
     }
-
 }

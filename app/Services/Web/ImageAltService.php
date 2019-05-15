@@ -2,9 +2,7 @@
 
 namespace App\Services\Web;
 
-
 use DOMDocument;
-
 
 class ImageAltService
 {
@@ -39,7 +37,6 @@ class ImageAltService
         $this->initResponseArray();
         $domNodes = $this->domInitializer($body);
         return $this->computeExactNumbers($domNodes);
-
     }
 
     /**
@@ -52,7 +49,6 @@ class ImageAltService
         libxml_use_internal_errors(true);
         $dom->loadHTML($htmlContent);
         return $dom->getElementsByTagName("img");
-
     }
 
     /**
@@ -69,6 +65,4 @@ class ImageAltService
         }
         return $this->responseArray;
     }
-
-
 }

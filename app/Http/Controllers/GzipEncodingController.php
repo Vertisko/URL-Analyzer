@@ -24,12 +24,14 @@ class GzipEncodingController extends Controller
         $this->gzipEncodingService = $gzipEncodingService;
     }
 
+    /**
+     * @param Request $request
+     * @return array
+     */
     public function gzipTest(Request $request): array
     {
         $url = $request->input('url');
         $header = $this->retrieveCurlResponse($this->composeHeaderOptionsArray($url));
         return $this->gzipEncodingService->gzipTest($header["response"]);
     }
-
-
 }

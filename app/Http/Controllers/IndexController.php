@@ -20,7 +20,4 @@ class IndexController extends Controller
     {
         $this->indexService = $indexService;
     }
-
-
-
 }

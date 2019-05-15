@@ -6,7 +6,6 @@ use App\Services\Web\ImageAltService;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
-
 class ImageAltController extends Controller
 {
     use ClientUrlTrait;
@@ -28,7 +27,7 @@ class ImageAltController extends Controller
      * @param Request $request
      * @return array
      */
-    public function altsComputation(Request $request)
+    public function altsComputation(Request $request): array
     {
         $url = $request->input('url');
         $body = $this->retrieveCurlResponse($this->composeBodyOptionsArray($url));

@@ -13,7 +13,8 @@
     <!-- The form -->
     <form class="example" action="{{route('analyzer.post')}}" method="post">
         {{csrf_field()}}
-        <input type="text" placeholder="https://www.google.sk" name="url">
+        <input type="text" placeholder="https://www.google.sk" name="url"
+               value="{{ old('url') }}">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 

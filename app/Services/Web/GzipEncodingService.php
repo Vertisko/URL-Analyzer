@@ -14,7 +14,10 @@ class GzipEncodingService
         $this->initResponseArray();
     }
 
-    private function initResponseArray(bool $support = false)
+    /**
+     * @param bool $support
+     */
+    private function initResponseArray(bool $support = false): void
     {
         $this->responseArray = [
             "isSupported" => $support
@@ -22,9 +25,9 @@ class GzipEncodingService
     }
 
     /**
-     * @return mixed
+     * @return array
      */
-    public function getResponseArray()
+    public function getResponseArray(): array
     {
         return $this->responseArray;
     }
@@ -49,6 +52,4 @@ class GzipEncodingService
         $this->responseArray["isSupported"] = (strpos($header, "content-encoding: gzip")) ? true : false;
         return $this->responseArray;
     }
-
-
 }

@@ -2,9 +2,7 @@
 
 namespace App\Services\Web;
 
-
 use DOMDocument;
-
 
 class ImageWebPService
 {
@@ -38,7 +36,6 @@ class ImageWebPService
         $this->initResponseArray();
         $domNodes = $this->domInitializer($body);
         return $this->detectWebPFiles($domNodes);
-
     }
 
     /**
@@ -51,7 +48,6 @@ class ImageWebPService
         libxml_use_internal_errors(true);
         $dom->loadHTML($htmlContent);
         return $dom->getElementsByTagName("source");
-
     }
 
     /**
@@ -71,6 +67,4 @@ class ImageWebPService
         }
         return $this->responseArray;
     }
-
-
 }

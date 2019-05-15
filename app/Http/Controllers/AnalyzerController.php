@@ -6,7 +6,7 @@ use App\Http\Requests\Web\AnalyzerRequest;
 use App\Http\ResponseFactory;
 use App\Services\Web\AnalyzerService;
 use Illuminate\Http\JsonResponse;
-
+use Illuminate\View\View;
 
 class AnalyzerController extends Controller
 {
@@ -25,11 +25,15 @@ class AnalyzerController extends Controller
         $this->analyzerService = $analyzerService;
     }
 
-    public function intro()
+    public function intro(): View
     {
         return view('analyzer');
     }
 
+    /**
+     * @param AnalyzerRequest $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|View
+     */
     public function analyze(AnalyzerRequest $request)
     {
         $analysis = $this->analyzerService->analyze($request);
@@ -41,15 +45,14 @@ class AnalyzerController extends Controller
                 'result' => $analysis
             ]);
         }
-
     }
 
+    /**
+     * @param AnalyzerRequest $request
+     * @return JsonResponse
+     */
     public function analyzeJson(AnalyzerRequest $request): JsonResponse
     {
         return ResponseFactory::createSuccessfulResponse($this->analyzerService->analyze($request));
     }
-
 }
-
-
-
