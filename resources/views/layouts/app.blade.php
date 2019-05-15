@@ -23,7 +23,7 @@
 </div>
 <!-- REQUIRED JS SCRIPTS -->
 <script src="{{ URL::asset('plugins/jquery/dist/jquery.min.js')}}"></script>
-<script src="{{ URL::asset('template/plugins/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="{{ URL::asset('plugins/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{ URL::asset('plugins/datatables.net/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{ URL::asset('plugins/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 <script>
