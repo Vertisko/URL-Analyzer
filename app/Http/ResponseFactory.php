@@ -15,7 +15,5 @@ class ResponseFactory
     public static function createFailedResponse(array $errors, int $statusCode, array $headers = [])
     {
         return JsonResponse::create(["errors" => $errors], $statusCode, $headers);
-
     }
-
 }

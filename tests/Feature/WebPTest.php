@@ -16,16 +16,20 @@ class WebPTest extends TestCase
     public function testExample()
     {
         //        <picture>
-//  <source srcset="img.webp" type="image/webp">
-//  <source srcset="img.jpg" type="image/jpeg">
-//  <img src="img.jpg">
-//</picture>
-        $this->executeTest('
+        //  <source srcset="img.webp" type="image/webp">
+        //  <source srcset="img.jpg" type="image/jpeg">
+        //  <img src="img.jpg">
+        //</picture>
+        $this->executeTest(
+            '
         <source srcset="img.webp" type="image/webp">
         <source srcset="img.jpg" type="image/jpeg">',
-            true);
-        $this->executeTest('<source srcset="img.jpg" type="image/jpeg">',
-            false);
+            true
+        );
+        $this->executeTest(
+            '<source srcset="img.jpg" type="image/jpeg">',
+            false
+        );
     }
 
     private function executeTest(string $body, bool $isSupported)
@@ -34,5 +38,4 @@ class WebPTest extends TestCase
         $response->assertStatus(200);
         $response->assertJson(["isSupported" => $isSupported]);
     }
-
 }

@@ -3,10 +3,23 @@
 
 namespace App\Services\DTO;
 
+/**
+ * Class AuditDTO
+ * @package App\Services\DTO
+ */
 class AuditDTO extends BaseDTO
 {
+    /**
+     * @var
+     */
     private $description;
+    /**
+     * @var
+     */
     private $score;
+    /**
+     * @var
+     */
     private $title;
 
     /**
@@ -40,6 +53,7 @@ class AuditDTO extends BaseDTO
     public function setScore(int $score): AuditDTO
     {
         $this->score = $score;
+        return $this;
     }
 
     /**
@@ -49,6 +63,7 @@ class AuditDTO extends BaseDTO
     public function setDescription($description): AuditDTO
     {
         $this->description = $description;
+        return $this;
     }
 
     /**
@@ -58,5 +73,6 @@ class AuditDTO extends BaseDTO
     public function setTitle(string $title): AuditDTO
     {
         $this->title = $title;
+        return $this;
     }
 }

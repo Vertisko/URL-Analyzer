@@ -45,4 +45,3 @@ Route::prefix('webp')->group(function () {
 Route::prefix('insight')->group(function () {
     Route::get('', 'PageSpeedInsightController@insightAnalysis')->name('insight.insightAnalysis'); // DONE
 });
-
