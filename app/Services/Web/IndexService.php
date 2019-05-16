@@ -6,12 +6,19 @@ use App\Traits\ClientUrlTrait;
 use RobotsTxtParser;
 use vipnytt\XRobotsTagParser;
 
+/**
+ * Class IndexService
+ * @package App\Services\Web
+ */
 class IndexService
 {
     use ClientUrlTrait;
 
     private $responseArray;
 
+    /**
+     * IndexService constructor.
+     */
     public function __construct()
     {
         $this->initResponseArray();
@@ -57,6 +64,11 @@ class IndexService
     }
 
 
+    /**
+     * @param string $header
+     * @param string $url
+     * @return array
+     */
     public function indexTest(string $header, string $url): array
     {
         $this->initResponseArray();
@@ -67,6 +79,9 @@ class IndexService
         return $this->getResponseArray();
     }
 
+    /**
+     * @param string $header
+     */
     private function lookupXRobotTag(string $header)
     {
         $result = $this->initPartArray();
@@ -81,12 +96,19 @@ class IndexService
         $this->responseArray["xRobotTag"] = $result;
     }
 
+    /**
+     * @param string $header
+     * @return array
+     */
     private function retrieveXRobotRules(string $header): array
     {
         $parser = new XRobotsTagParser\Adapters\TextString($header, '*');
         return $parser->getRules();
     }
 
+    /**
+     * @param string $url
+     */
     private function lookupRobotsFile(string $url): void
     {
         $result = $this->initPartArray();
@@ -98,6 +120,12 @@ class IndexService
         $this->responseArray["robotsFile"] = $result;
     }
 
+    /**
+     * @param array $result
+     * @param string $robotsFileBody
+     * @param string $agent
+     * @return array
+     */
     private function robotTsFileIndexTest(array $result, string $robotsFileBody, string $agent): array
     {
         $result["exists"] = true;
@@ -107,6 +135,9 @@ class IndexService
         return $result;
     }
 
+    /**
+     * @param string $url
+     */
     private function lookupMetaTag(string $url): void
     {
         $result = $this->initPartArray();

@@ -8,6 +8,10 @@ use App\Services\Web\AnalyzerService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\View\View;
 
+/**
+ * Class AnalyzerController
+ * @package App\Http\Controllers
+ */
 class AnalyzerController extends Controller
 {
 
@@ -25,6 +29,9 @@ class AnalyzerController extends Controller
         $this->analyzerService = $analyzerService;
     }
 
+    /**
+     * @return View
+     */
     public function intro(): View
     {
         return view('analyzer');

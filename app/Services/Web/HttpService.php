@@ -2,6 +2,10 @@
 
 namespace App\Services\Web;
 
+/**
+ * Class HttpService
+ * @package App\Services\Web
+ */
 class HttpService
 {
     private $responseArray;

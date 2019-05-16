@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Services\Web\IndexService;
 use Illuminate\Http\Request;
 
+/**
+ * Class IndexController
+ * @package App\Http\Controllers
+ */
 class IndexController extends Controller
 {
     /**

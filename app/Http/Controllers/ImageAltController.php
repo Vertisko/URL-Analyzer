@@ -6,6 +6,10 @@ use App\Services\Web\ImageAltService;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
+/**
+ * Class ImageAltController
+ * @package App\Http\Controllers
+ */
 class ImageAltController extends Controller
 {
     use ClientUrlTrait;

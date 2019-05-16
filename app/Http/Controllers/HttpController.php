@@ -6,6 +6,10 @@ use App\Services\Web\HttpService;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
+/**
+ * Class HttpController
+ * @package App\Http\Controllers
+ */
 class HttpController extends Controller
 {
     use ClientUrlTrait;

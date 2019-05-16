@@ -6,10 +6,13 @@ use App\Services\DTO\AuditDTO;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Support\Facades\Config;
 
+/**
+ * Class PageSpeedInsightService
+ * @package App\Services\Web
+ */
 class PageSpeedInsightService
 {
     use ClientUrlTrait;
-
 
     /**
      * PageSpeedInsightService constructor.

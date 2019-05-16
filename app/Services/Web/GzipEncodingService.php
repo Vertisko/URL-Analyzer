@@ -2,6 +2,10 @@
 
 namespace App\Services\Web;
 
+/**
+ * Class GzipEncodingService
+ * @package App\Services\Web
+ */
 class GzipEncodingService
 {
     private $responseArray;

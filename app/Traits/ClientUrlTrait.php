@@ -2,6 +2,10 @@
 
 namespace App\Traits;
 
+/**
+ * Trait ClientUrlTrait
+ * @package App\Traits
+ */
 trait ClientUrlTrait
 {
 

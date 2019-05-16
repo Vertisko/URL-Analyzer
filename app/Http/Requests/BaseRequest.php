@@ -5,6 +5,10 @@ namespace App\Http\Requests;
 use App\Services\Validation\ValidateService;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Class BaseRequest
+ * @package App\Http\Requests
+ */
 class BaseRequest extends FormRequest
 {
     /**
@@ -13,6 +17,10 @@ class BaseRequest extends FormRequest
     protected $validateService;
 
 
+    /**
+     * BaseRequest constructor.
+     * @param ValidateService $validateService
+     */
     public function __construct(ValidateService $validateService)
     {
         parent::__construct();

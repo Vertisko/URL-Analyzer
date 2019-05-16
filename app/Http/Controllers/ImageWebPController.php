@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Services\Web\ImageWebPService;
 use Illuminate\Http\Request;
 
+/**
+ * Class ImageWebPController
+ * @package App\Http\Controllers
+ */
 class ImageWebPController extends Controller
 {
     /**

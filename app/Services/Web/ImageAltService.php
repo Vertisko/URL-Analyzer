@@ -4,6 +4,10 @@ namespace App\Services\Web;
 
 use DOMDocument;
 
+/**
+ * Class ImageAltService
+ * @package App\Services\Web
+ */
 class ImageAltService
 {
     private $responseArray;

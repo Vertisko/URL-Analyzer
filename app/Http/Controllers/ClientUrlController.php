@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
+/**
+ * Class ClientUrlController
+ * @package App\Http\Controllers
+ */
 class ClientUrlController extends Controller
 {
     use ClientUrlTrait;

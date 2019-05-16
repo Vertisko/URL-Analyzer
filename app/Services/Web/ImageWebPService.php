@@ -4,6 +4,10 @@ namespace App\Services\Web;
 
 use DOMDocument;
 
+/**
+ * Class ImageWebPService
+ * @package App\Services\Web
+ */
 class ImageWebPService
 {
     const TYPE_IMAGE_WEB_P = "image/webp";

@@ -6,6 +6,10 @@ namespace App\Services\Web;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
+/**
+ * Class AnalyzerService
+ * @package App\Services\Web
+ */
 class AnalyzerService
 {
     use ClientUrlTrait;
@@ -59,6 +63,10 @@ class AnalyzerService
         $this->imageWebPService = $imageWebPService;
     }
 
+    /**
+     * @param Request $request
+     * @return array
+     */
     public function analyze(Request $request): array
     {
         $url = $request->input('url');
