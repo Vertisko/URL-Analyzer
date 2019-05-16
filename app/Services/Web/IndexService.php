@@ -85,10 +85,10 @@ class IndexService
     private function lookupXRobotTag(string $header)
     {
         $result = $this->initPartArray();
+        $result["exists"] = (stripos($header, "X-Robots-Tag")) ? true : false;
         $rules = $this->retrieveXRobotRules($header);
         //         rules for agent * found
         if (!empty($rules)) {
-            $result["exists"] = true;
             if (isset($rules['noindex'])) {
                 $result["isIndexed"] = !$rules['noindex'];
             }
