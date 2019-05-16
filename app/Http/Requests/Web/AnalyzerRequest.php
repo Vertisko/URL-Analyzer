@@ -19,7 +19,7 @@ class AnalyzerRequest extends BaseRequest
     public function rules()
     {
         return array_merge(
-            $this->validateService->urlValidation()
+            validateService()->urlValidation()
         );
     }
 }

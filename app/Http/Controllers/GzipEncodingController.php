@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\Web\GzipEncodingService;
 use App\Traits\ClientUrlTrait;
 use Illuminate\Http\Request;
 
@@ -13,20 +12,6 @@ use Illuminate\Http\Request;
 class GzipEncodingController extends Controller
 {
     use ClientUrlTrait;
-    /**
-     * @var GzipEncodingService
-     */
-    private $gzipEncodingService;
-
-
-    /**
-     * GzipEncodingController constructor.
-     * @param GzipEncodingService $gzipEncodingService
-     */
-    public function __construct(GzipEncodingService $gzipEncodingService)
-    {
-        $this->gzipEncodingService = $gzipEncodingService;
-    }
 
     /**
      * @param Request $request
@@ -36,6 +21,6 @@ class GzipEncodingController extends Controller
     {
         $url = $request->input('url');
         $header = $this->retrieveCurlResponse($this->composeHeaderOptionsArray($url));
-        return $this->gzipEncodingService->gzipTest($header["response"]);
+        return gzipEncodingService()->gzipTest($header["response"]);
     }
 }

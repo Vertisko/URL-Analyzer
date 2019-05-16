@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests;
 
-use App\Services\Validation\ValidateService;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
@@ -11,22 +10,6 @@ use Illuminate\Foundation\Http\FormRequest;
  */
 class BaseRequest extends FormRequest
 {
-    /**
-     * @var ValidateService
-     */
-    protected $validateService;
-
-
-    /**
-     * BaseRequest constructor.
-     * @param ValidateService $validateService
-     */
-    public function __construct(ValidateService $validateService)
-    {
-        parent::__construct();
-        $this->validateService = $validateService;
-    }
-
     /**
      * Determine if the user is authorized to make this request.
      *

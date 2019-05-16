@@ -15,19 +15,12 @@ class PageSpeedInsightService
     use ClientUrlTrait;
 
     /**
-     * PageSpeedInsightService constructor.
-     */
-    public function __construct()
-    {
-    }
-
-    /**
      * @param string $testedUrl
      * @return array
      */
     public function insightAnalysisReview(string $testedUrl): array
     {
-        $url = Config::get('page-speed-insight.api_url') . $testedUrl;
+        $url = config('page-speed-insight.api_url') . $testedUrl;
 
         $body = $this->retrieveCurlResponse(
             $this->composeBodyOptionsArray($url)
@@ -42,8 +35,6 @@ class PageSpeedInsightService
     private function parseAnalysis(\stdClass $json): array
     {
         $result = [];
-//        $result["loadingExperience"] = $json->loadingExperience->overall_category ?? -1;
-//        $result["originLoadingExperience"] = $json->originLoadingExperience->overall_category ?? -1;
         $result["audits"] = [];
         if (isset($json->lighthouseResult)) {
             foreach ($json->lighthouseResult->audits as $audit) {

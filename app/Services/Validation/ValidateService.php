@@ -2,18 +2,16 @@
 
 namespace App\Services\Validation;
 
-use Illuminate\Validation\Rule;
-
+/**
+ * Class ValidateService
+ * @package App\Services\Validation
+ */
 class ValidateService
 {
 
     /**
-     * HelperService constructor.
+     * @return array
      */
-    public function __construct()
-    {
-    }
-
     public function urlValidation(): array
     {
         return ['url' => 'url'];

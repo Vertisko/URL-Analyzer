@@ -48,31 +48,28 @@ class AuditDTO extends BaseDTO
 
     /**
      * @param int $score
-     * @return AuditDTO
+     * @return void
      */
-    public function setScore(int $score): AuditDTO
+    public function setScore(int $score): void
     {
         $this->score = $score;
-        return $this;
     }
 
     /**
      * @param mixed $description
-     * @return AuditDTO
+     * @return void
      */
-    public function setDescription($description): AuditDTO
+    public function setDescription($description): void
     {
         $this->description = $description;
-        return $this;
     }
 
     /**
      * @param string $title
-     * @return AuditDTO
+     * @return void
      */
-    public function setTitle(string $title): AuditDTO
+    public function setTitle(string $title): void
     {
         $this->title = $title;
-        return $this;
     }
 }
