@@ -19,7 +19,7 @@ PHP - version >= 7.1.3
    - a) meta tag <br/>
    - b) robots.txt file <br/>
    - c) x-robots-tag <br/>
-<br/>
+
 ### Prerequisites
 
 For optional maintenance usage the global installation of https://cs.symfony.com (PHP Coding Standards Fixer) is required 
