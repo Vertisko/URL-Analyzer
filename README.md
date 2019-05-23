@@ -2,21 +2,21 @@
 
 Simple tool for analyzing given website according to (some) recommended SEO rules. 
 
-Main tools:
+## Main tools:
 
 Laravel PHP Framework - version 5.8.16 <br/>
 PHP - version >= 7.1.3
 
-Analyze modules:
+## Analyze modules:
 
 0.) Status code <br/>
 1.) HTTP/2.0 Support <br/>
 2.) GZIP Encoding Support <br/>
 3.) Image/WEBP Support <br/>
 4.) Robots indexation - Detection of existence and possible rules <br/>
-    a) meta tag <br/>
-    b) robots.txt file <br/>
-    c) x-robots-tag <br/>
+   - a) meta tag <br/>
+   - b) robots.txt file <br/>
+   - c) x-robots-tag <br/>
 5.) Detection of existing and nonexistent alt tags of HTML image elements <br/>
 6.) Page Speed Insights audits processor
 
@@ -68,13 +68,13 @@ File also provides tests launching and has own help function.
 
 ## Running&Usage
 
-Launching
+## Launching
 
 ```
 php artisan serve
 ```
 
-Usage 
+## Usage 
 
 The application supports two usage scenarios. First scenario expects basic interaction with client (browser). The output of  second scenario is JSON format.
 
