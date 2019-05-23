@@ -14,13 +14,12 @@ PHP - version >= 7.1.3
 2.) GZIP Encoding Support <br/>
 3.) Image/WEBP Support <br/>
 4.) Detection of existing and nonexistent alt tags of HTML image elements <br/>
-5.) Page Speed Insights audits processor
+5.) Page Speed Insights audits processor <br/>
 6.) Robots indexation - Detection of existence and possible rules <br/>
    - a) meta tag <br/>
    - b) robots.txt file <br/>
    - c) x-robots-tag <br/>
-
-
+<br/>
 ### Prerequisites
 
 For optional maintenance usage the global installation of https://cs.symfony.com (PHP Coding Standards Fixer) is required 
