@@ -4,20 +4,20 @@ Simple tool for analyzing given website according to (some) recommended SEO rule
 
 Main tools:
 
-Laravel PHP Framework - version 5.8.16
+Laravel PHP Framework - version 5.8.16 <br/>
 PHP - version >= 7.1.3
 
 Analyze modules:
 
-0.) Status code
-1.) HTTP/2.0 Support
-2.) GZIP Encoding Support 
-3.) Image/WEBP Support
-4.) Robots indexation - Detection of existence and possible rules
-    a) meta tag 
-    b) robots.txt file
-    c) x-robots-tag
-5.) Detection of existing and nonexistent alt tags of HTML image elements
+0.) Status code <br/>
+1.) HTTP/2.0 Support <br/>
+2.) GZIP Encoding Support <br/>
+3.) Image/WEBP Support <br/>
+4.) Robots indexation - Detection of existence and possible rules <br/>
+    a) meta tag <br/>
+    b) robots.txt file <br/>
+    c) x-robots-tag <br/>
+5.) Detection of existing and nonexistent alt tags of HTML image elements <br/>
 6.) Page Speed Insights audits processor
 
 ### Prerequisites
