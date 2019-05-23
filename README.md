@@ -13,12 +13,13 @@ PHP - version >= 7.1.3
 1.) HTTP/2.0 Support <br/>
 2.) GZIP Encoding Support <br/>
 3.) Image/WEBP Support <br/>
-4.) Robots indexation - Detection of existence and possible rules <br/>
+4.) Detection of existing and nonexistent alt tags of HTML image elements <br/>
+5.) Page Speed Insights audits processor
+6.) Robots indexation - Detection of existence and possible rules <br/>
    - a) meta tag <br/>
    - b) robots.txt file <br/>
    - c) x-robots-tag <br/>
-5.) Detection of existing and nonexistent alt tags of HTML image elements <br/>
-6.) Page Speed Insights audits processor
+
 
 ### Prerequisites
 
@@ -66,7 +67,7 @@ File also provides tests launching and has own help function.
 ./analyzer.sh maintenance
 ```
 
-## Running&Usage
+## Running & Usage
 
 ## Launching
 
